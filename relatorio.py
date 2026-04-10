@@ -36,7 +36,7 @@ def init():
             "iep_meta":  0.0,
             "residuo":   0.0,
             "distritos":  0,
-            "prazo":      "",
+            "prazo":      15,
             "escopo":     "",
             "problemas":  "",
             "acoes":      "",
