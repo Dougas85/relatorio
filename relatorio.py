@@ -16,7 +16,7 @@ from reportlab.platypus import Flowable
 
 # ── CONFIG ────────────────────────────────────────────────────
 st.set_page_config(
-    page_title="EUFT · Reestruturação Logística",
+    page_title="DFS · Relatório 5W2H"
     page_icon="📦", layout="wide",
     initial_sidebar_state="collapsed",
 )
@@ -29,26 +29,18 @@ def init():
         st.session_state.tela = "editor"
     if "form" not in st.session_state:
         st.session_state.form = {
-            "unidade":     "CDD Americana",
-            "responsavel": "Douglas Francisco da Silva",
+            "unidade":     " ",
+            "responsavel": " ",
             "data":        datetime.date.today().strftime("%d/%m/%Y"),
-            "iep_atual":   67,
-            "iep_meta":    97,
-            "residuo":     150000,
-            "distritos":   5,
-            "prazo":       90,
-            "escopo": (
-                
-            ),
-            "problemas": (
-                
-            ),
-            "acoes": (
-                
-            ),
-            "conclusao": (
-               
-            ),
+            "iep_atual":   ,
+            "iep_meta":    ,
+            "residuo":     ,
+            "distritos":   ,
+            "prazo":       ,
+            "escopo": ,
+            "problemas": ,
+            "acoes": ,
+            "conclusao": ,
             "imgs": {s: [] for s in SECOES},
             "w5h2": [
                 {
@@ -472,7 +464,7 @@ def uploader_imagens(secao: str, num: str):
 def tela_editor():
     st.markdown("""
     <div class="hero">
-        <div class="hero-tag">EUFT · Sistema de Reestruturação Logística</div>
+        <div class="hero-tag"> · Relatório de Reestruturação Logística</div>
         <div class="hero-h1">Editor do Plano Técnico</div>
         <div class="hero-sub">
             Preencha os campos e anexe imagens em cada seção.
