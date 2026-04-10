@@ -23,4 +23,4 @@ COPY . .
 EXPOSE 8501
 
 # Comando para rodar o Streamlit no Render
-CMD ["sh", "-c", "streamlit run app.py --server.port $PORT --server.address 0.0.0.0"]
+CMD ["sh", "-c", "streamlit run relatorio.py --server.port $PORT --server.address 0.0.0.0"]
