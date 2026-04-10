@@ -16,7 +16,7 @@ from reportlab.platypus import Flowable
 
 # ── CONFIG ────────────────────────────────────────────────────
 st.set_page_config(
-    page_title="DFS · Relatório 5W2H"
+    page_title="DFS · Relatório 5W2H",
     page_icon="📦", layout="wide",
     initial_sidebar_state="collapsed",
 )
