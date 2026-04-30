@@ -412,7 +412,7 @@ def gerar_pdf() -> bytes:
     story.append(HRFlowable(width="100%", thickness=1, color=azul))
     story.append(Spacer(1, .3*cm))
     story.append(Paragraph(
-        f"Documento gerado em {F['data']} · Sistema de Gestão de Reestruturação EUFT",
+        f"Documento gerado em {F['data']} · Sistema de Gestão de Reestruturação",
         s_foot))
 
     doc.build(story)
